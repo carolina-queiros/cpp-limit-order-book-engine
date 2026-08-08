@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+project(cpp_limit_order_book LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+include_directories(include)
+add_executable(lob-engine src/main.cpp src/order_book.cpp)
